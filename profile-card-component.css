@@ -1,0 +1,131 @@
+:root {
+
+    /* Primary */
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+
+/* Neutral */
+
+--Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+section {
+    background: var(--Dark-cyan);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}  
+
+.card {
+    width: 350px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    margin-top: 20px;
+}
+.card-header {
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 150px;
+    /* margin-top: 20px; */
+}
+
+.card-body {
+    padding: 0 20px 30px;
+}
+.img-holder {
+    width: 108px;
+    border-radius: 50%; 
+    border: 5px solid white;
+    overflow: hidden;
+    margin: -50px auto 30px auto;
+}
+
+.img-holder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.name-age {
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.age {
+    font-weight: 400;
+    color: var(--Dark-gray);
+}
+
+.location {
+    font-weight: 400;
+    color: var(--Dark-gray);
+}
+.value {
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+    /* opacity: 1; */ 
+}
+.value-name {
+    font-weight: 400;
+    color: var(--Dark-gray);
+}
+
+.card-footer {
+    border-top: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    padding: 0 25px;
+}
+
+.card-footer .item {
+    flex: 1; 
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer .item .value {
+    margin-bottom: 6px; 
+}
+
+.card-footer 
+.item
+.value-name {
+    letter-spacing: 1px;
+}
+
+.circles .c1,
+.circles .c2 {
+    position: fixed;
+}
+
+.circles .c1 {
+    bottom: 50%;
+    right: 50%;
+}
+.circles .c2 {
+   top: 50%;
+   left: 50%;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
